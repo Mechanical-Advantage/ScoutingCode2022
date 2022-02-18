@@ -1,0 +1,2873 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1010.1202                               -->
+<workbook original-version='18.1' source-build='2019.4.0 (20194.19.1010.1202)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='PointsComparison_2022 (points_comparison_2022)' inline='true' name='federated.11z8b8l1ibf5ip17g091e1lk55vv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='points_comparison_2022' name='excel-direct.0ynlqhf090hm4814jtikp19a94i7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/mascout/TableauInput/points_comparison_2022.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0ynlqhf090hm4814jtikp19a94i7' name='PointsComparison_2022' table='[PointsComparison_2022$]' type='table'>
+          <columns gridOrigin='A1:D1324:no:A1:D1324:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Team' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='real' name='Value' ordinal='2' />
+            <column datatype='real' name='Percentile' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[PointsComparison_2022]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[PointsComparison_2022]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[PointsComparison_2022]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percentile</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percentile]</local-name>
+            <parent-name>[PointsComparison_2022]</parent-name>
+            <remote-alias>Percentile</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[PointsComparison_2022]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D1324:no:A1:D1324:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='CountD' datatype='real' name='[Percentile]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+      <column-instance column='[Percentile]' derivation='None' name='[none:Percentile:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.519943' measure-ordering='alphabetic' measure-percentage='0.480057' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Percentile:ok]' palette='cyclic_10_0' type='palette'>
+            <map to='#1ba3c6'>
+              <bucket>0.0</bucket>
+            </map>
+            <map to='#23b18d'>
+              <bucket>45.649999999999999</bucket>
+            </map>
+            <map to='#2bb5c0'>
+              <bucket>30.43</bucket>
+            </map>
+            <map to='#2ea865'>
+              <bucket>47.829999999999998</bucket>
+            </map>
+            <map to='#32bdb1'>
+              <bucket>34.780000000000001</bucket>
+            </map>
+            <map to='#459f3b'>
+              <bucket>50.0</bucket>
+            </map>
+            <map to='#4f7cba'>
+              <bucket>100.0</bucket>
+            </map>
+            <map to='#7674c0'>
+              <bucket>97.829999999999998</bucket>
+            </map>
+            <map to='#8cb12c'>
+              <bucket>58.700000000000003</bucket>
+            </map>
+            <map to='#9e6dc2'>
+              <bucket>95.650000000000006</bucket>
+            </map>
+            <map to='#c86abf'>
+              <bucket>93.480000000000004</bucket>
+            </map>
+            <map to='#c8bc21'>
+              <bucket>69.569999999999993</bucket>
+            </map>
+            <map to='#e33233'>
+              <bucket>82.609999999999999</bucket>
+            </map>
+            <map to='#e670b6'>
+              <bucket>91.299999999999997</bucket>
+            </map>
+            <map to='#e9501f'>
+              <bucket>80.430000000000007</bucket>
+            </map>
+            <map to='#ecb921'>
+              <bucket>71.739999999999995</bucket>
+            </map>
+            <map to='#ef3957'>
+              <bucket>84.780000000000001</bucket>
+            </map>
+            <map to='#f8557f'>
+              <bucket>86.959999999999994</bucket>
+            </map>
+            <map to='#f88113'>
+              <bucket>76.090000000000003</bucket>
+            </map>
+            <map to='#f8a21b'>
+              <bucket>73.909999999999997</bucket>
+            </map>
+            <map to='#fe7caa'>
+              <bucket>89.129999999999995</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='TeamByMatch (TeamByMatch)' inline='true' name='federated.17imrtc188cpa11fb5nw11acn6cv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='TeamByMatch' name='excel-direct.0o9vqb41q1fe47155uu390m6cune'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/mascout/TableauInput/TeamByMatch.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <relation connection='excel-direct.0o9vqb41q1fe47155uu390m6cune' name='TeamByMatch' table='[TeamByMatch$]' type='table'>
+            <columns gridOrigin='A1:BE50:no:A1:BE50:0' header='yes' outcome='6'>
+              <column datatype='real' name='Avg_AutoLowerSuccess' ordinal='0' />
+              <column datatype='real' name='Avg_AutoUpperSuccess' ordinal='1' />
+              <column datatype='real' name='Avg_TeleLowerSuccess' ordinal='2' />
+              <column datatype='real' name='Avg_TeleUpperSuccess' ordinal='3' />
+              <column datatype='real' name='AvgNo0_AutoLowerSuccess' ordinal='4' />
+              <column datatype='real' name='AvgNo0_AutoUpperSuccess' ordinal='5' />
+              <column datatype='real' name='AvgNo0_TeleLowerSuccess' ordinal='6' />
+              <column datatype='real' name='AvgNo0_TeleUpperSuccess' ordinal='7' />
+              <column datatype='integer' name='Team' ordinal='8' />
+              <column datatype='real' name='StdDev_AutoUpperSuccess' ordinal='9' />
+              <column datatype='integer' name='Max_AutoUpperSuccess' ordinal='10' />
+              <column datatype='real' name='StdDev_AutoLowerSuccess' ordinal='11' />
+              <column datatype='integer' name='Max_AutoLowerSuccess' ordinal='12' />
+              <column datatype='real' name='StdDev_TeleUpperSuccess' ordinal='13' />
+              <column datatype='integer' name='Max_TeleUpperSuccess' ordinal='14' />
+              <column datatype='real' name='StdDev_TeleLowerSuccess' ordinal='15' />
+              <column datatype='integer' name='Max_TeleLowerSuccess' ordinal='16' />
+              <column datatype='real' name='Avg_TotalUpperSuccess' ordinal='17' />
+              <column datatype='real' name='StdDev_TotalUpperSuccess' ordinal='18' />
+              <column datatype='integer' name='Max_TotalUpperSuccess' ordinal='19' />
+              <column datatype='real' name='Avg_TotalLowerSuccess' ordinal='20' />
+              <column datatype='real' name='StdDev_TotalLowerSuccess' ordinal='21' />
+              <column datatype='integer' name='Max_TotalLowerSuccess' ordinal='22' />
+              <column datatype='real' name='Avg_TotalSuccess' ordinal='23' />
+              <column datatype='real' name='StdDev_TotalSuccess' ordinal='24' />
+              <column datatype='integer' name='Max_TotalSuccess' ordinal='25' />
+              <column datatype='real' name='Avg_TotalShots' ordinal='26' />
+              <column datatype='real' name='StdDev_TotalShots' ordinal='27' />
+              <column datatype='integer' name='Max_TotalShots' ordinal='28' />
+              <column datatype='real' name='AvgNo0_DriverRating' ordinal='29' />
+              <column datatype='real' name='AvgNo0_IntakeRating' ordinal='30' />
+              <column datatype='real' name='AvgNo0_DefenseRating' ordinal='31' />
+              <column datatype='integer' name='Count' ordinal='32' />
+              <column datatype='string' name='Comment' ordinal='33' />
+              <column datatype='integer' name='Sum_ClimbLowAttempted' ordinal='34' />
+              <column datatype='integer' name='Sum_ClimbLowSuccess' ordinal='35' />
+              <column datatype='integer' name='Sum_ClimbMidAttempted' ordinal='36' />
+              <column datatype='integer' name='Sum_ClimbMidSuccess' ordinal='37' />
+              <column datatype='integer' name='Sum_ClimbHighAttempted' ordinal='38' />
+              <column datatype='integer' name='Sum_ClimbHighSuccess' ordinal='39' />
+              <column datatype='integer' name='Sum_ClimbTraversalAttempted' ordinal='40' />
+              <column datatype='integer' name='Sum_ClimbTraversalSuccess' ordinal='41' />
+              <column datatype='real' name='AvgNo0_climbLowTime' ordinal='42' />
+              <column datatype='real' name='AvgNo0_climbMidTime' ordinal='43' />
+              <column datatype='real' name='AvgNo0_climbHighTime' ordinal='44' />
+              <column datatype='real' name='AvgNo0_climbTraversalTime' ordinal='45' />
+              <column datatype='real' name='AvgNo0_climbTotalTime' ordinal='46' />
+              <column datatype='integer' name='AvgNo0_UnderDefenseRating' ordinal='47' />
+              <column datatype='integer' name='Sum_TotalClimbPoints' ordinal='48' />
+              <column datatype='integer' name='Sum_AutoPoints' ordinal='49' />
+              <column datatype='integer' name='Sum_TelePoints' ordinal='50' />
+              <column datatype='integer' name='Sum_TotalPoints' ordinal='51' />
+              <column datatype='real' name='ClimbLowPercentage' ordinal='52' />
+              <column datatype='integer' name='ClimbMidPercentage' ordinal='53' />
+              <column datatype='integer' name='ClimbHighPercentage' ordinal='54' />
+              <column datatype='integer' name='ClimbTraversalPercentage' ordinal='55' />
+              <column datatype='integer' name='Avg_ClimbPoints' ordinal='56' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0o9vqb41q1fe47155uu390m6cune' name='TeamByMatch1' table='[TeamByMatch$]' type='table'>
+            <columns gridOrigin='A1:BE50:no:A1:BE50:0' header='yes' outcome='6'>
+              <column datatype='real' name='Avg_AutoLowerSuccess' ordinal='57' />
+              <column datatype='real' name='Avg_AutoUpperSuccess' ordinal='58' />
+              <column datatype='real' name='Avg_TeleLowerSuccess' ordinal='59' />
+              <column datatype='real' name='Avg_TeleUpperSuccess' ordinal='60' />
+              <column datatype='real' name='AvgNo0_AutoLowerSuccess' ordinal='61' />
+              <column datatype='real' name='AvgNo0_AutoUpperSuccess' ordinal='62' />
+              <column datatype='real' name='AvgNo0_TeleLowerSuccess' ordinal='63' />
+              <column datatype='real' name='AvgNo0_TeleUpperSuccess' ordinal='64' />
+              <column datatype='integer' name='Team' ordinal='65' />
+              <column datatype='real' name='StdDev_AutoUpperSuccess' ordinal='66' />
+              <column datatype='integer' name='Max_AutoUpperSuccess' ordinal='67' />
+              <column datatype='real' name='StdDev_AutoLowerSuccess' ordinal='68' />
+              <column datatype='integer' name='Max_AutoLowerSuccess' ordinal='69' />
+              <column datatype='real' name='StdDev_TeleUpperSuccess' ordinal='70' />
+              <column datatype='integer' name='Max_TeleUpperSuccess' ordinal='71' />
+              <column datatype='real' name='StdDev_TeleLowerSuccess' ordinal='72' />
+              <column datatype='integer' name='Max_TeleLowerSuccess' ordinal='73' />
+              <column datatype='real' name='Avg_TotalUpperSuccess' ordinal='74' />
+              <column datatype='real' name='StdDev_TotalUpperSuccess' ordinal='75' />
+              <column datatype='integer' name='Max_TotalUpperSuccess' ordinal='76' />
+              <column datatype='real' name='Avg_TotalLowerSuccess' ordinal='77' />
+              <column datatype='real' name='StdDev_TotalLowerSuccess' ordinal='78' />
+              <column datatype='integer' name='Max_TotalLowerSuccess' ordinal='79' />
+              <column datatype='real' name='Avg_TotalSuccess' ordinal='80' />
+              <column datatype='real' name='StdDev_TotalSuccess' ordinal='81' />
+              <column datatype='integer' name='Max_TotalSuccess' ordinal='82' />
+              <column datatype='real' name='Avg_TotalShots' ordinal='83' />
+              <column datatype='real' name='StdDev_TotalShots' ordinal='84' />
+              <column datatype='integer' name='Max_TotalShots' ordinal='85' />
+              <column datatype='real' name='AvgNo0_DriverRating' ordinal='86' />
+              <column datatype='real' name='AvgNo0_IntakeRating' ordinal='87' />
+              <column datatype='real' name='AvgNo0_DefenseRating' ordinal='88' />
+              <column datatype='integer' name='Count' ordinal='89' />
+              <column datatype='string' name='Comment' ordinal='90' />
+              <column datatype='integer' name='Sum_ClimbLowAttempted' ordinal='91' />
+              <column datatype='integer' name='Sum_ClimbLowSuccess' ordinal='92' />
+              <column datatype='integer' name='Sum_ClimbMidAttempted' ordinal='93' />
+              <column datatype='integer' name='Sum_ClimbMidSuccess' ordinal='94' />
+              <column datatype='integer' name='Sum_ClimbHighAttempted' ordinal='95' />
+              <column datatype='integer' name='Sum_ClimbHighSuccess' ordinal='96' />
+              <column datatype='integer' name='Sum_ClimbTraversalAttempted' ordinal='97' />
+              <column datatype='integer' name='Sum_ClimbTraversalSuccess' ordinal='98' />
+              <column datatype='real' name='AvgNo0_climbLowTime' ordinal='99' />
+              <column datatype='real' name='AvgNo0_climbMidTime' ordinal='100' />
+              <column datatype='real' name='AvgNo0_climbHighTime' ordinal='101' />
+              <column datatype='real' name='AvgNo0_climbTraversalTime' ordinal='102' />
+              <column datatype='real' name='AvgNo0_climbTotalTime' ordinal='103' />
+              <column datatype='integer' name='AvgNo0_UnderDefenseRating' ordinal='104' />
+              <column datatype='integer' name='Sum_TotalClimbPoints' ordinal='105' />
+              <column datatype='integer' name='Sum_AutoPoints' ordinal='106' />
+              <column datatype='integer' name='Sum_TelePoints' ordinal='107' />
+              <column datatype='integer' name='Sum_TotalPoints' ordinal='108' />
+              <column datatype='real' name='ClimbLowPercentage' ordinal='109' />
+              <column datatype='integer' name='ClimbMidPercentage' ordinal='110' />
+              <column datatype='integer' name='ClimbHighPercentage' ordinal='111' />
+              <column datatype='integer' name='ClimbTraversalPercentage' ordinal='112' />
+              <column datatype='integer' name='Avg_ClimbPoints' ordinal='113' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[AvgNo0_AutoLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_AutoLowerSuccess]' />
+          <map key='[AvgNo0_AutoLowerSuccess]' value='[TeamByMatch].[AvgNo0_AutoLowerSuccess]' />
+          <map key='[AvgNo0_AutoUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_AutoUpperSuccess]' />
+          <map key='[AvgNo0_AutoUpperSuccess]' value='[TeamByMatch].[AvgNo0_AutoUpperSuccess]' />
+          <map key='[AvgNo0_DefenseRating (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_DefenseRating]' />
+          <map key='[AvgNo0_DefenseRating]' value='[TeamByMatch].[AvgNo0_DefenseRating]' />
+          <map key='[AvgNo0_DriverRating (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_DriverRating]' />
+          <map key='[AvgNo0_DriverRating]' value='[TeamByMatch].[AvgNo0_DriverRating]' />
+          <map key='[AvgNo0_IntakeRating (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_IntakeRating]' />
+          <map key='[AvgNo0_IntakeRating]' value='[TeamByMatch].[AvgNo0_IntakeRating]' />
+          <map key='[AvgNo0_TeleLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_TeleLowerSuccess]' />
+          <map key='[AvgNo0_TeleLowerSuccess]' value='[TeamByMatch].[AvgNo0_TeleLowerSuccess]' />
+          <map key='[AvgNo0_TeleUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_TeleUpperSuccess]' />
+          <map key='[AvgNo0_TeleUpperSuccess]' value='[TeamByMatch].[AvgNo0_TeleUpperSuccess]' />
+          <map key='[AvgNo0_UnderDefenseRating (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_UnderDefenseRating]' />
+          <map key='[AvgNo0_UnderDefenseRating]' value='[TeamByMatch].[AvgNo0_UnderDefenseRating]' />
+          <map key='[AvgNo0_climbHighTime (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_climbHighTime]' />
+          <map key='[AvgNo0_climbHighTime]' value='[TeamByMatch].[AvgNo0_climbHighTime]' />
+          <map key='[AvgNo0_climbLowTime (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_climbLowTime]' />
+          <map key='[AvgNo0_climbLowTime]' value='[TeamByMatch].[AvgNo0_climbLowTime]' />
+          <map key='[AvgNo0_climbMidTime (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_climbMidTime]' />
+          <map key='[AvgNo0_climbMidTime]' value='[TeamByMatch].[AvgNo0_climbMidTime]' />
+          <map key='[AvgNo0_climbTotalTime (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_climbTotalTime]' />
+          <map key='[AvgNo0_climbTotalTime]' value='[TeamByMatch].[AvgNo0_climbTotalTime]' />
+          <map key='[AvgNo0_climbTraversalTime (TeamByMatch1)]' value='[TeamByMatch1].[AvgNo0_climbTraversalTime]' />
+          <map key='[AvgNo0_climbTraversalTime]' value='[TeamByMatch].[AvgNo0_climbTraversalTime]' />
+          <map key='[Avg_AutoLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Avg_AutoLowerSuccess]' />
+          <map key='[Avg_AutoLowerSuccess]' value='[TeamByMatch].[Avg_AutoLowerSuccess]' />
+          <map key='[Avg_AutoUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Avg_AutoUpperSuccess]' />
+          <map key='[Avg_AutoUpperSuccess]' value='[TeamByMatch].[Avg_AutoUpperSuccess]' />
+          <map key='[Avg_ClimbPoints (TeamByMatch1)]' value='[TeamByMatch1].[Avg_ClimbPoints]' />
+          <map key='[Avg_ClimbPoints]' value='[TeamByMatch].[Avg_ClimbPoints]' />
+          <map key='[Avg_TeleLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Avg_TeleLowerSuccess]' />
+          <map key='[Avg_TeleLowerSuccess]' value='[TeamByMatch].[Avg_TeleLowerSuccess]' />
+          <map key='[Avg_TeleUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Avg_TeleUpperSuccess]' />
+          <map key='[Avg_TeleUpperSuccess]' value='[TeamByMatch].[Avg_TeleUpperSuccess]' />
+          <map key='[Avg_TotalLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Avg_TotalLowerSuccess]' />
+          <map key='[Avg_TotalLowerSuccess]' value='[TeamByMatch].[Avg_TotalLowerSuccess]' />
+          <map key='[Avg_TotalShots (TeamByMatch1)]' value='[TeamByMatch1].[Avg_TotalShots]' />
+          <map key='[Avg_TotalShots]' value='[TeamByMatch].[Avg_TotalShots]' />
+          <map key='[Avg_TotalSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Avg_TotalSuccess]' />
+          <map key='[Avg_TotalSuccess]' value='[TeamByMatch].[Avg_TotalSuccess]' />
+          <map key='[Avg_TotalUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Avg_TotalUpperSuccess]' />
+          <map key='[Avg_TotalUpperSuccess]' value='[TeamByMatch].[Avg_TotalUpperSuccess]' />
+          <map key='[ClimbHighPercentage (TeamByMatch1)]' value='[TeamByMatch1].[ClimbHighPercentage]' />
+          <map key='[ClimbHighPercentage]' value='[TeamByMatch].[ClimbHighPercentage]' />
+          <map key='[ClimbLowPercentage (TeamByMatch1)]' value='[TeamByMatch1].[ClimbLowPercentage]' />
+          <map key='[ClimbLowPercentage]' value='[TeamByMatch].[ClimbLowPercentage]' />
+          <map key='[ClimbMidPercentage (TeamByMatch1)]' value='[TeamByMatch1].[ClimbMidPercentage]' />
+          <map key='[ClimbMidPercentage]' value='[TeamByMatch].[ClimbMidPercentage]' />
+          <map key='[ClimbTraversalPercentage (TeamByMatch1)]' value='[TeamByMatch1].[ClimbTraversalPercentage]' />
+          <map key='[ClimbTraversalPercentage]' value='[TeamByMatch].[ClimbTraversalPercentage]' />
+          <map key='[Comment (TeamByMatch1)]' value='[TeamByMatch1].[Comment]' />
+          <map key='[Comment]' value='[TeamByMatch].[Comment]' />
+          <map key='[Count (TeamByMatch1)]' value='[TeamByMatch1].[Count]' />
+          <map key='[Count]' value='[TeamByMatch].[Count]' />
+          <map key='[Max_AutoLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Max_AutoLowerSuccess]' />
+          <map key='[Max_AutoLowerSuccess]' value='[TeamByMatch].[Max_AutoLowerSuccess]' />
+          <map key='[Max_AutoUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Max_AutoUpperSuccess]' />
+          <map key='[Max_AutoUpperSuccess]' value='[TeamByMatch].[Max_AutoUpperSuccess]' />
+          <map key='[Max_TeleLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Max_TeleLowerSuccess]' />
+          <map key='[Max_TeleLowerSuccess]' value='[TeamByMatch].[Max_TeleLowerSuccess]' />
+          <map key='[Max_TeleUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Max_TeleUpperSuccess]' />
+          <map key='[Max_TeleUpperSuccess]' value='[TeamByMatch].[Max_TeleUpperSuccess]' />
+          <map key='[Max_TotalLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Max_TotalLowerSuccess]' />
+          <map key='[Max_TotalLowerSuccess]' value='[TeamByMatch].[Max_TotalLowerSuccess]' />
+          <map key='[Max_TotalShots (TeamByMatch1)]' value='[TeamByMatch1].[Max_TotalShots]' />
+          <map key='[Max_TotalShots]' value='[TeamByMatch].[Max_TotalShots]' />
+          <map key='[Max_TotalSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Max_TotalSuccess]' />
+          <map key='[Max_TotalSuccess]' value='[TeamByMatch].[Max_TotalSuccess]' />
+          <map key='[Max_TotalUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Max_TotalUpperSuccess]' />
+          <map key='[Max_TotalUpperSuccess]' value='[TeamByMatch].[Max_TotalUpperSuccess]' />
+          <map key='[StdDev_AutoLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[StdDev_AutoLowerSuccess]' />
+          <map key='[StdDev_AutoLowerSuccess]' value='[TeamByMatch].[StdDev_AutoLowerSuccess]' />
+          <map key='[StdDev_AutoUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[StdDev_AutoUpperSuccess]' />
+          <map key='[StdDev_AutoUpperSuccess]' value='[TeamByMatch].[StdDev_AutoUpperSuccess]' />
+          <map key='[StdDev_TeleLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[StdDev_TeleLowerSuccess]' />
+          <map key='[StdDev_TeleLowerSuccess]' value='[TeamByMatch].[StdDev_TeleLowerSuccess]' />
+          <map key='[StdDev_TeleUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[StdDev_TeleUpperSuccess]' />
+          <map key='[StdDev_TeleUpperSuccess]' value='[TeamByMatch].[StdDev_TeleUpperSuccess]' />
+          <map key='[StdDev_TotalLowerSuccess (TeamByMatch1)]' value='[TeamByMatch1].[StdDev_TotalLowerSuccess]' />
+          <map key='[StdDev_TotalLowerSuccess]' value='[TeamByMatch].[StdDev_TotalLowerSuccess]' />
+          <map key='[StdDev_TotalShots (TeamByMatch1)]' value='[TeamByMatch1].[StdDev_TotalShots]' />
+          <map key='[StdDev_TotalShots]' value='[TeamByMatch].[StdDev_TotalShots]' />
+          <map key='[StdDev_TotalSuccess (TeamByMatch1)]' value='[TeamByMatch1].[StdDev_TotalSuccess]' />
+          <map key='[StdDev_TotalSuccess]' value='[TeamByMatch].[StdDev_TotalSuccess]' />
+          <map key='[StdDev_TotalUpperSuccess (TeamByMatch1)]' value='[TeamByMatch1].[StdDev_TotalUpperSuccess]' />
+          <map key='[StdDev_TotalUpperSuccess]' value='[TeamByMatch].[StdDev_TotalUpperSuccess]' />
+          <map key='[Sum_AutoPoints (TeamByMatch1)]' value='[TeamByMatch1].[Sum_AutoPoints]' />
+          <map key='[Sum_AutoPoints]' value='[TeamByMatch].[Sum_AutoPoints]' />
+          <map key='[Sum_ClimbHighAttempted (TeamByMatch1)]' value='[TeamByMatch1].[Sum_ClimbHighAttempted]' />
+          <map key='[Sum_ClimbHighAttempted]' value='[TeamByMatch].[Sum_ClimbHighAttempted]' />
+          <map key='[Sum_ClimbHighSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Sum_ClimbHighSuccess]' />
+          <map key='[Sum_ClimbHighSuccess]' value='[TeamByMatch].[Sum_ClimbHighSuccess]' />
+          <map key='[Sum_ClimbLowAttempted (TeamByMatch1)]' value='[TeamByMatch1].[Sum_ClimbLowAttempted]' />
+          <map key='[Sum_ClimbLowAttempted]' value='[TeamByMatch].[Sum_ClimbLowAttempted]' />
+          <map key='[Sum_ClimbLowSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Sum_ClimbLowSuccess]' />
+          <map key='[Sum_ClimbLowSuccess]' value='[TeamByMatch].[Sum_ClimbLowSuccess]' />
+          <map key='[Sum_ClimbMidAttempted (TeamByMatch1)]' value='[TeamByMatch1].[Sum_ClimbMidAttempted]' />
+          <map key='[Sum_ClimbMidAttempted]' value='[TeamByMatch].[Sum_ClimbMidAttempted]' />
+          <map key='[Sum_ClimbMidSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Sum_ClimbMidSuccess]' />
+          <map key='[Sum_ClimbMidSuccess]' value='[TeamByMatch].[Sum_ClimbMidSuccess]' />
+          <map key='[Sum_ClimbTraversalAttempted (TeamByMatch1)]' value='[TeamByMatch1].[Sum_ClimbTraversalAttempted]' />
+          <map key='[Sum_ClimbTraversalAttempted]' value='[TeamByMatch].[Sum_ClimbTraversalAttempted]' />
+          <map key='[Sum_ClimbTraversalSuccess (TeamByMatch1)]' value='[TeamByMatch1].[Sum_ClimbTraversalSuccess]' />
+          <map key='[Sum_ClimbTraversalSuccess]' value='[TeamByMatch].[Sum_ClimbTraversalSuccess]' />
+          <map key='[Sum_TelePoints (TeamByMatch1)]' value='[TeamByMatch1].[Sum_TelePoints]' />
+          <map key='[Sum_TelePoints]' value='[TeamByMatch].[Sum_TelePoints]' />
+          <map key='[Sum_TotalClimbPoints (TeamByMatch1)]' value='[TeamByMatch1].[Sum_TotalClimbPoints]' />
+          <map key='[Sum_TotalClimbPoints]' value='[TeamByMatch].[Sum_TotalClimbPoints]' />
+          <map key='[Sum_TotalPoints (TeamByMatch1)]' value='[TeamByMatch1].[Sum_TotalPoints]' />
+          <map key='[Sum_TotalPoints]' value='[TeamByMatch].[Sum_TotalPoints]' />
+          <map key='[Team (TeamByMatch1)]' value='[TeamByMatch1].[Team]' />
+          <map key='[Team]' value='[TeamByMatch].[Team]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Avg_AutoLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_AutoLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_AutoLowerSuccess</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_AutoUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_AutoUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_AutoUpperSuccess</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TeleLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TeleLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_TeleLowerSuccess</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TeleUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TeleUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_TeleUpperSuccess</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_AutoLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_AutoLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_AutoLowerSuccess</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_AutoUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_AutoUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_AutoUpperSuccess</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_TeleLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_TeleLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_TeleLowerSuccess</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_TeleUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_TeleUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_TeleUpperSuccess</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_AutoUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_AutoUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>StdDev_AutoUpperSuccess</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_AutoUpperSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_AutoUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Max_AutoUpperSuccess</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_AutoLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_AutoLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>StdDev_AutoLowerSuccess</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_AutoLowerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_AutoLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Max_AutoLowerSuccess</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TeleUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TeleUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>StdDev_TeleUpperSuccess</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TeleUpperSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TeleUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Max_TeleUpperSuccess</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TeleLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TeleLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>StdDev_TeleLowerSuccess</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TeleLowerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TeleLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Max_TeleLowerSuccess</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TotalUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TotalUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_TotalUpperSuccess</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TotalUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TotalUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>StdDev_TotalUpperSuccess</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TotalUpperSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TotalUpperSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Max_TotalUpperSuccess</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TotalLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TotalLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_TotalLowerSuccess</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TotalLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TotalLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>StdDev_TotalLowerSuccess</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TotalLowerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TotalLowerSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Max_TotalLowerSuccess</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TotalSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TotalSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_TotalSuccess</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TotalSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TotalSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>StdDev_TotalSuccess</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TotalSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TotalSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Max_TotalSuccess</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TotalShots</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TotalShots]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_TotalShots</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TotalShots</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TotalShots]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>StdDev_TotalShots</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TotalShots</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TotalShots]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Max_TotalShots</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_DriverRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_DriverRating]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_DriverRating</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_IntakeRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_IntakeRating]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_IntakeRating</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_DefenseRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_DefenseRating]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_DefenseRating</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Comment]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Comment</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbLowAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbLowAttempted]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_ClimbLowAttempted</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbLowSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbLowSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_ClimbLowSuccess</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbMidAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbMidAttempted]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_ClimbMidAttempted</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbMidSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbMidSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_ClimbMidSuccess</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbHighAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbHighAttempted]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_ClimbHighAttempted</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbHighSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbHighSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_ClimbHighSuccess</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbTraversalAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbTraversalAttempted]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_ClimbTraversalAttempted</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbTraversalSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbTraversalSuccess]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_ClimbTraversalSuccess</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbLowTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbLowTime]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_climbLowTime</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbMidTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbMidTime]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_climbMidTime</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbHighTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbHighTime]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_climbHighTime</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbTraversalTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbTraversalTime]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_climbTraversalTime</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbTotalTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbTotalTime]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_climbTotalTime</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_UnderDefenseRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_UnderDefenseRating]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>AvgNo0_UnderDefenseRating</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_TotalClimbPoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_TotalClimbPoints]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_TotalClimbPoints</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_AutoPoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_AutoPoints]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_AutoPoints</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_TelePoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_TelePoints]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_TelePoints</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_TotalPoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_TotalPoints]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Sum_TotalPoints</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbLowPercentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ClimbLowPercentage]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>ClimbLowPercentage</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbMidPercentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClimbMidPercentage]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>ClimbMidPercentage</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbHighPercentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClimbHighPercentage]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>ClimbHighPercentage</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbTraversalPercentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClimbTraversalPercentage]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>ClimbTraversalPercentage</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_ClimbPoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg_ClimbPoints]</local-name>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias>Avg_ClimbPoints</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TeamByMatch]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BE50:no:A1:BE50:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_AutoLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_AutoLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_AutoLowerSuccess</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_AutoUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_AutoUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_AutoUpperSuccess</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TeleLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TeleLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_TeleLowerSuccess</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TeleUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TeleUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_TeleUpperSuccess</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_AutoLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_AutoLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_AutoLowerSuccess</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_AutoUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_AutoUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_AutoUpperSuccess</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_TeleLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_TeleLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_TeleLowerSuccess</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_TeleUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_TeleUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_TeleUpperSuccess</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_AutoUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_AutoUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>StdDev_AutoUpperSuccess</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_AutoUpperSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_AutoUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Max_AutoUpperSuccess</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_AutoLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_AutoLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>StdDev_AutoLowerSuccess</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_AutoLowerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_AutoLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Max_AutoLowerSuccess</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TeleUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TeleUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>StdDev_TeleUpperSuccess</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TeleUpperSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TeleUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Max_TeleUpperSuccess</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TeleLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TeleLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>StdDev_TeleLowerSuccess</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TeleLowerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TeleLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Max_TeleLowerSuccess</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TotalUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TotalUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_TotalUpperSuccess</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TotalUpperSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TotalUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>StdDev_TotalUpperSuccess</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TotalUpperSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TotalUpperSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Max_TotalUpperSuccess</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TotalLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TotalLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_TotalLowerSuccess</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TotalLowerSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TotalLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>StdDev_TotalLowerSuccess</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TotalLowerSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TotalLowerSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Max_TotalLowerSuccess</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TotalSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TotalSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_TotalSuccess</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TotalSuccess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TotalSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>StdDev_TotalSuccess</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TotalSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TotalSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Max_TotalSuccess</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_TotalShots</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_TotalShots (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_TotalShots</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StdDev_TotalShots</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StdDev_TotalShots (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>StdDev_TotalShots</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_TotalShots</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_TotalShots (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Max_TotalShots</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_DriverRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_DriverRating (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_DriverRating</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_IntakeRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_IntakeRating (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_IntakeRating</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_DefenseRating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_DefenseRating (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_DefenseRating</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Comment (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Comment</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbLowAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbLowAttempted (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_ClimbLowAttempted</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbLowSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbLowSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_ClimbLowSuccess</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbMidAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbMidAttempted (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_ClimbMidAttempted</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbMidSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbMidSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_ClimbMidSuccess</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbHighAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbHighAttempted (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_ClimbHighAttempted</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbHighSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbHighSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_ClimbHighSuccess</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbTraversalAttempted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbTraversalAttempted (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_ClimbTraversalAttempted</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_ClimbTraversalSuccess</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_ClimbTraversalSuccess (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_ClimbTraversalSuccess</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbLowTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbLowTime (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_climbLowTime</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbMidTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbMidTime (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_climbMidTime</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbHighTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbHighTime (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_climbHighTime</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbTraversalTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbTraversalTime (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_climbTraversalTime</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_climbTotalTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgNo0_climbTotalTime (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_climbTotalTime</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgNo0_UnderDefenseRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AvgNo0_UnderDefenseRating (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>AvgNo0_UnderDefenseRating</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_TotalClimbPoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_TotalClimbPoints (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_TotalClimbPoints</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_AutoPoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_AutoPoints (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_AutoPoints</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_TelePoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_TelePoints (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_TelePoints</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum_TotalPoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum_TotalPoints (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Sum_TotalPoints</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbLowPercentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ClimbLowPercentage (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>ClimbLowPercentage</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbMidPercentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClimbMidPercentage (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>ClimbMidPercentage</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbHighPercentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClimbHighPercentage (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>ClimbHighPercentage</remote-alias>
+            <ordinal>111</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClimbTraversalPercentage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClimbTraversalPercentage (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>ClimbTraversalPercentage</remote-alias>
+            <ordinal>112</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_ClimbPoints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg_ClimbPoints (TeamByMatch1)]</local-name>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias>Avg_ClimbPoints</remote-alias>
+            <ordinal>113</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TeamByMatch1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BE50:no:A1:BE50:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='AvgNo0 AutoLowerSuccess (TeamByMatch1)' datatype='real' name='[AvgNo0_AutoLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 AutoLowerSuccess' datatype='real' name='[AvgNo0_AutoLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 AutoUpperSuccess (TeamByMatch1)' datatype='real' name='[AvgNo0_AutoUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 AutoUpperSuccess' datatype='real' name='[AvgNo0_AutoUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 DefenseRating (TeamByMatch1)' datatype='real' name='[AvgNo0_DefenseRating (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 DefenseRating' datatype='real' name='[AvgNo0_DefenseRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 DriverRating (TeamByMatch1)' datatype='real' name='[AvgNo0_DriverRating (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 DriverRating' datatype='real' name='[AvgNo0_DriverRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 IntakeRating (TeamByMatch1)' datatype='real' name='[AvgNo0_IntakeRating (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 IntakeRating' datatype='real' name='[AvgNo0_IntakeRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 TeleLowerSuccess (TeamByMatch1)' datatype='real' name='[AvgNo0_TeleLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 TeleLowerSuccess' datatype='real' name='[AvgNo0_TeleLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 TeleUpperSuccess (TeamByMatch1)' datatype='real' name='[AvgNo0_TeleUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 TeleUpperSuccess' datatype='real' name='[AvgNo0_TeleUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 UnderDefenseRating (TeamByMatch1)' datatype='integer' name='[AvgNo0_UnderDefenseRating (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 UnderDefenseRating' datatype='integer' name='[AvgNo0_UnderDefenseRating]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbHighTime (TeamByMatch1)' datatype='real' name='[AvgNo0_climbHighTime (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbHighTime' datatype='real' name='[AvgNo0_climbHighTime]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbLowTime (TeamByMatch1)' datatype='real' name='[AvgNo0_climbLowTime (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbLowTime' datatype='real' name='[AvgNo0_climbLowTime]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbMidTime (TeamByMatch1)' datatype='real' name='[AvgNo0_climbMidTime (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbMidTime' datatype='real' name='[AvgNo0_climbMidTime]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbTotalTime (TeamByMatch1)' datatype='real' name='[AvgNo0_climbTotalTime (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbTotalTime' datatype='real' name='[AvgNo0_climbTotalTime]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbTraversalTime (TeamByMatch1)' datatype='real' name='[AvgNo0_climbTraversalTime (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='AvgNo0 climbTraversalTime' datatype='real' name='[AvgNo0_climbTraversalTime]' role='measure' type='quantitative' />
+      <column caption='Avg AutoLowerSuccess (TeamByMatch1)' datatype='real' name='[Avg_AutoLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg AutoLowerSuccess' datatype='real' name='[Avg_AutoLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='Avg AutoUpperSuccess (TeamByMatch1)' datatype='real' name='[Avg_AutoUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg AutoUpperSuccess' datatype='real' name='[Avg_AutoUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='Avg ClimbPoints (TeamByMatch1)' datatype='integer' name='[Avg_ClimbPoints (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg ClimbPoints' datatype='integer' name='[Avg_ClimbPoints]' role='measure' type='quantitative' />
+      <column caption='Avg TeleLowerSuccess (TeamByMatch1)' datatype='real' name='[Avg_TeleLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg TeleLowerSuccess' datatype='real' name='[Avg_TeleLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='Avg TeleUpperSuccess (TeamByMatch1)' datatype='real' name='[Avg_TeleUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg TeleUpperSuccess' datatype='real' name='[Avg_TeleUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='Avg TotalLowerSuccess (TeamByMatch1)' datatype='real' name='[Avg_TotalLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg TotalLowerSuccess' datatype='real' name='[Avg_TotalLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='Avg TotalShots (TeamByMatch1)' datatype='real' name='[Avg_TotalShots (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg TotalShots' datatype='real' name='[Avg_TotalShots]' role='measure' type='quantitative' />
+      <column caption='Avg TotalSuccess (TeamByMatch1)' datatype='real' name='[Avg_TotalSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg TotalSuccess' datatype='real' name='[Avg_TotalSuccess]' role='measure' type='quantitative' />
+      <column caption='Avg TotalUpperSuccess (TeamByMatch1)' datatype='real' name='[Avg_TotalUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Avg TotalUpperSuccess' datatype='real' name='[Avg_TotalUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='Climb High Percentage' datatype='integer' name='[ClimbHighPercentage]' role='measure' type='quantitative' />
+      <column caption='Climb Low Percentage' datatype='real' name='[ClimbLowPercentage]' role='measure' type='quantitative' />
+      <column caption='Climb Mid Percentage' datatype='integer' name='[ClimbMidPercentage]' role='measure' type='quantitative' />
+      <column caption='Climb Traversal Percentage' datatype='integer' name='[ClimbTraversalPercentage]' role='measure' type='quantitative' />
+      <column caption='Max AutoLowerSuccess (TeamByMatch1)' datatype='integer' name='[Max_AutoLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Max AutoLowerSuccess' datatype='integer' name='[Max_AutoLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='Max AutoUpperSuccess (TeamByMatch1)' datatype='integer' name='[Max_AutoUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Max AutoUpperSuccess' datatype='integer' name='[Max_AutoUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='Max TeleLowerSuccess (TeamByMatch1)' datatype='integer' name='[Max_TeleLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Max TeleLowerSuccess' datatype='integer' name='[Max_TeleLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='Max TeleUpperSuccess (TeamByMatch1)' datatype='integer' name='[Max_TeleUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Max TeleUpperSuccess' datatype='integer' name='[Max_TeleUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='Max TotalLowerSuccess (TeamByMatch1)' datatype='integer' name='[Max_TotalLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Max TotalLowerSuccess' datatype='integer' name='[Max_TotalLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='Max TotalShots (TeamByMatch1)' datatype='integer' name='[Max_TotalShots (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Max TotalShots' datatype='integer' name='[Max_TotalShots]' role='measure' type='quantitative' />
+      <column caption='Max TotalSuccess (TeamByMatch1)' datatype='integer' name='[Max_TotalSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Max TotalSuccess' datatype='integer' name='[Max_TotalSuccess]' role='measure' type='quantitative' />
+      <column caption='Max TotalUpperSuccess (TeamByMatch1)' datatype='integer' name='[Max_TotalUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Max TotalUpperSuccess' datatype='integer' name='[Max_TotalUpperSuccess]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='StdDev AutoLowerSuccess (TeamByMatch1)' datatype='real' name='[StdDev_AutoLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='StdDev AutoLowerSuccess' datatype='real' name='[StdDev_AutoLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='StdDev AutoUpperSuccess (TeamByMatch1)' datatype='real' name='[StdDev_AutoUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='StdDev AutoUpperSuccess' datatype='real' name='[StdDev_AutoUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='StdDev TeleLowerSuccess (TeamByMatch1)' datatype='real' name='[StdDev_TeleLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='StdDev TeleLowerSuccess' datatype='real' name='[StdDev_TeleLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='StdDev TeleUpperSuccess (TeamByMatch1)' datatype='real' name='[StdDev_TeleUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='StdDev TeleUpperSuccess' datatype='real' name='[StdDev_TeleUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='StdDev TotalLowerSuccess (TeamByMatch1)' datatype='real' name='[StdDev_TotalLowerSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='StdDev TotalLowerSuccess' datatype='real' name='[StdDev_TotalLowerSuccess]' role='measure' type='quantitative' />
+      <column caption='StdDev TotalShots (TeamByMatch1)' datatype='real' name='[StdDev_TotalShots (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='StdDev TotalShots' datatype='real' name='[StdDev_TotalShots]' role='measure' type='quantitative' />
+      <column caption='StdDev TotalSuccess (TeamByMatch1)' datatype='real' name='[StdDev_TotalSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='StdDev TotalSuccess' datatype='real' name='[StdDev_TotalSuccess]' role='measure' type='quantitative' />
+      <column caption='StdDev TotalUpperSuccess (TeamByMatch1)' datatype='real' name='[StdDev_TotalUpperSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='StdDev TotalUpperSuccess' datatype='real' name='[StdDev_TotalUpperSuccess]' role='measure' type='quantitative' />
+      <column caption='Sum AutoPoints (TeamByMatch1)' datatype='integer' name='[Sum_AutoPoints (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum AutoPoints' datatype='integer' name='[Sum_AutoPoints]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbHighAttempted (TeamByMatch1)' datatype='integer' name='[Sum_ClimbHighAttempted (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbHighAttempted' datatype='integer' name='[Sum_ClimbHighAttempted]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbHighSuccess (TeamByMatch1)' datatype='integer' name='[Sum_ClimbHighSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbHighSuccess' datatype='integer' name='[Sum_ClimbHighSuccess]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbLowAttempted (TeamByMatch1)' datatype='integer' name='[Sum_ClimbLowAttempted (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbLowAttempted' datatype='integer' name='[Sum_ClimbLowAttempted]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbLowSuccess (TeamByMatch1)' datatype='integer' name='[Sum_ClimbLowSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbLowSuccess' datatype='integer' name='[Sum_ClimbLowSuccess]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbMidAttempted (TeamByMatch1)' datatype='integer' name='[Sum_ClimbMidAttempted (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbMidAttempted' datatype='integer' name='[Sum_ClimbMidAttempted]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbMidSuccess (TeamByMatch1)' datatype='integer' name='[Sum_ClimbMidSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbMidSuccess' datatype='integer' name='[Sum_ClimbMidSuccess]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbTraversalAttempted (TeamByMatch1)' datatype='integer' name='[Sum_ClimbTraversalAttempted (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbTraversalAttempted' datatype='integer' name='[Sum_ClimbTraversalAttempted]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbTraversalSuccess (TeamByMatch1)' datatype='integer' name='[Sum_ClimbTraversalSuccess (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum ClimbTraversalSuccess' datatype='integer' name='[Sum_ClimbTraversalSuccess]' role='measure' type='quantitative' />
+      <column caption='Sum TelePoints (TeamByMatch1)' datatype='integer' name='[Sum_TelePoints (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum TelePoints' datatype='integer' name='[Sum_TelePoints]' role='measure' type='quantitative' />
+      <column caption='Sum TotalClimbPoints (TeamByMatch1)' datatype='integer' name='[Sum_TotalClimbPoints (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum TotalClimbPoints' datatype='integer' name='[Sum_TotalClimbPoints]' role='measure' type='quantitative' />
+      <column caption='Sum TotalPoints (TeamByMatch1)' datatype='integer' name='[Sum_TotalPoints (TeamByMatch1)]' role='measure' type='quantitative' />
+      <column caption='Sum TotalPoints' datatype='integer' name='[Sum_TotalPoints]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.185185' measure-ordering='alphabetic' measure-percentage='0.814815' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='PontsComparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PointsComparison_2022 (points_comparison_2022)' name='federated.11z8b8l1ibf5ip17g091e1lk55vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11z8b8l1ibf5ip17g091e1lk55vv'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='real' name='[Percentile]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' datatype='integer' name='[Team]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Percentile]' derivation='Sum' name='[sum:Percentile:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Name:nk]'>
+            <groupfilter function='level-members' level='[none:Name:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Team:ok]'>
+            <groupfilter from='1' function='range' level='[none:Team:ok]' to='63281' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Team:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[sum:Value:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Name:nk]' member-value='&quot;Avg_TeleUpperSuccess&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Team:ok]</column>
+            <column>[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Name:nk]' value='296' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Name:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[sum:Percentile:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[sum:Percentile:qk]' />
+              <text column='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[sum:Value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Team:ok]</rows>
+        <cols>[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Name:nk]</cols>
+      </table>
+      <simple-id uuid='{1EE42FD2-C74D-421C-91E0-BFFAC6E5E66D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='PontsComparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='256'>
+            <card param='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.11z8b8l1ibf5ip17g091e1lk55vv].[sum:Percentile:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11z8b8l1ibf5ip17g091e1lk55vv].[ctd:Percentile:qk]</field>
+            <field>[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Name:nk]</field>
+            <field>[federated.11z8b8l1ibf5ip17g091e1lk55vv].[none:Team:ok]</field>
+            <field>[federated.11z8b8l1ibf5ip17g091e1lk55vv].[sum:Percentile:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{309F07BB-C5F2-41D5-A04B-391E28567605}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='PontsComparison' width='192'>
+      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
+      dX/aSSphAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
