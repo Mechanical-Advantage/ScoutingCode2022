@@ -358,7 +358,7 @@ Query=match</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints" type="Double" />
             <Field name="Count2" source="Summarize: Count" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures" type="Int64" />
@@ -388,7 +388,7 @@ Query=match</DefaultAnnotationText>
             <FormulaField expression="[TotalUpperSuccess]+[TotalLowerSuccess]" field="TotalSuccess" size="2" type="Int16" />
             <FormulaField expression="[TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" field="TotalShots" size="2" type="Int16" />
             <FormulaField expression="&quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" field="CommentWithMatch" size="1073741823" type="V_WString" />
-            <FormulaField expression="[AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" field="AutoPoints" size="4" type="Int32" />
+            <FormulaField expression="[AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" field="AutoPoints" size="4" type="Int32" />
             <FormulaField expression="[TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" field="TelePoints" size="4" type="Int32" />
           </FormulaFields>
         </Configuration>
@@ -443,7 +443,7 @@ TotalLowerSuccess = [A...</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
           </RecordInfo>
           <SortInfo>
@@ -725,7 +725,7 @@ FixedClimbMid = Sub...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_beee4a0a5ead4f4c900f990677b81fed_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_d8a4f3dcd596412da91a333e9de140ac_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1264,7 +1264,7 @@ FixedClimbMid = Sub...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_615a7df5aa5c4bc4aea8abe45d5281d8_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_34093b92a12f46fab080d0fe5e569832_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1375,7 +1375,7 @@ FixedClimbMid = Sub...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_3c79899048fc4eda81760757aaaf1a43_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_f040b0b2c783417a878b5e086d4d2d95_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1785,7 +1785,7 @@ ZoneX = IF [ShootingPositionZo...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_4e6d4ef3dfcb45bd81cc8ac5da414942_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_5dd4228728504dca9716cd3859515907_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2048,7 +2048,7 @@ Query=ShootingDataByMatch</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_be17f56efe45468aafb514f6bf264a9e_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_e585f0de7c124340823c91fd6776e48b_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2361,7 +2361,7 @@ UpperSho...</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -2456,7 +2456,7 @@ UpperSho...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_0e57929b9c4a4f809c696427c5c2dec7_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_17ad7a41c45c4c27a4d8bff89eae05e2_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2655,7 +2655,7 @@ Query=StartPositionByName</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_05220b51f77d455ca623b29c4dc94314_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_3ffc878dc3474cdd8a1011776bbc1872_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2807,7 +2807,7 @@ Query=StartPositionByName</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
           </RecordInfo>
           <SortInfo noProgress="True">
@@ -2860,7 +2860,7 @@ Query=StartPositionByName</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -2993,7 +2993,7 @@ ClimbMidPerce...</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints" type="Double" />
             <Field name="Count2" source="Summarize: Count" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures" type="Int64" />
@@ -3188,7 +3188,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -3215,7 +3215,7 @@ Query=AverageData</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_741cfd6ba87d44feaa033951cda5a6e3_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_878795e22400457da7f97a87e93eeb63_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -3243,7 +3243,7 @@ Query=AverageData</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_391e533f43864cd9b9920f613f599bc4_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_d64e9c010d064ffe9985721b9a57eef7_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -3342,7 +3342,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -3446,7 +3446,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -3549,7 +3549,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -3648,7 +3648,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -3753,7 +3753,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -3853,7 +3853,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -3959,7 +3959,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4065,7 +4065,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4167,7 +4167,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4275,7 +4275,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4378,7 +4378,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4487,7 +4487,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4591,7 +4591,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4701,7 +4701,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4806,7 +4806,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -4917,7 +4917,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -5023,7 +5023,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -5135,7 +5135,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -5242,7 +5242,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -5355,7 +5355,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -5526,7 +5526,7 @@ Query=AverageData</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_db754e9e482a4f2ebef9970949a0f9d4_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_0e1467f24e6546c99f4160dd1ef9bc92_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -5653,7 +5653,7 @@ Query=AverageData</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -5731,7 +5731,7 @@ StdDev_TeleUpperSucc...</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -5918,7 +5918,7 @@ StdDev_TeleUpperSucc...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_2c007910ce32432aa542f66d5f8a350b_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_2b0aca13e2184ae18ab07ff8b73957c8_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -6041,7 +6041,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -6155,7 +6155,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -6264,7 +6264,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -6379,7 +6379,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -6489,7 +6489,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -6605,7 +6605,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -6716,7 +6716,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -6833,7 +6833,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -6945,7 +6945,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -7064,7 +7064,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -7178,7 +7178,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -7298,7 +7298,7 @@ Query=PointsComparison_2022</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -7402,7 +7402,7 @@ Cl...</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -7658,7 +7658,7 @@ Query=TeamByMatch</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -7776,7 +7776,7 @@ Query=TeamByMatch</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -7873,7 +7873,7 @@ Query=TeamByMatch</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -8080,7 +8080,7 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_7d90c306db2f46c98fe0bef119adc0f6_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_a59cf8c19bd14cb5825fd07ef22a1ccb_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -8174,7 +8174,7 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -8248,7 +8248,7 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -8286,12 +8286,12 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Expression>[Team] = 1100 or [Team] = 1 or [Team] = 63281</Expression>
+          <Expression>[Team] = 811 or [Team] = 1721 or [Team] = 3467</Expression>
           <Mode>Custom</Mode>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>[Team] = 1100 or [Team] = 1 or [Team] = 63281</DefaultAnnotationText>
+          <DefaultAnnotationText>[Team] = 811 or [Team] = 1721 or [Team] = 3467</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="True">
@@ -8339,7 +8339,7 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -8413,7 +8413,7 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -8506,7 +8506,7 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -8600,7 +8600,7 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -8694,7 +8694,7 @@ Query=ZoneShootingDataByMatch</DefaultAnnotationText>
             <Field name="TotalSuccess" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]" type="Int16" />
             <Field name="TotalShots" source="Formula: [TotalUpperSuccess]+[TotalLowerSuccess]+[AutoUpperFailures]+[AutoLowerFailures]+[TeleUpperFailures]+[TeleLowerFailures]" type="Int16" />
             <Field name="CommentWithMatch" size="1073741823" source="Formula: &quot;M&quot; + toString([Match]) + &quot; - &quot; + [Comment]" type="V_WString" />
-            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5" type="Int32" />
+            <Field name="AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2" type="Int32" />
             <Field name="TelePoints" source="Formula: [TeleLowerSuccess]*1 + [TeleUpperSuccess]*2" type="Int32" />
             <Field name="Right_Team" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Right_Match" source="File: C:\mascout\AdvantageScout\data_2022.db|||match (BatchMacro) (BatchMacro)" type="Int64" />
@@ -8910,7 +8910,7 @@ Query=PointsByAlliance</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_5b023eb3e28643cd9e584c258c96bf92_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_2b70311b388c4fcab64b6a7b7ecd5ad4_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -9100,12 +9100,12 @@ LowerSuccessPercenta...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Expression>[Team] = 1 or [Team] = 2 or [Team] = 4</Expression>
+          <Expression>[Team] = 811 or [Team] = 1721 or [Team] = 3467</Expression>
           <Mode>Custom</Mode>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>[Team] = 1 or [Team] = 2 or [Team] = 4</DefaultAnnotationText>
+          <DefaultAnnotationText>[Team] = 811 or [Team] = 1721 or [Team] = 3467</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="True">
@@ -9361,7 +9361,7 @@ LowerSuccessPercentage =...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_f71337cb13b447e98b4b60278480de8d_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_9d963ef57f724fcf98a6b395b4c1ee19_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -9508,7 +9508,7 @@ Query=ShootingZoneByTeam</DefaultAnnotationText>
             <Field name="AvgNo0_TelePoints" source="Summarize: AvgNo0 - TelePoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="AvgNo0_TotalClimbPoints" source="Summarize: AvgNo0 - TotalClimbPoints (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Count2" source="Summarize: Count (BatchMacro) (BatchMacro)" type="Int64" />
-            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*5 (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_AutoPoints" source="Formula: [AutoLowerSuccess]*2 + [AutoUpperSuccess]*4 + [Taxi]*2 (BatchMacro) (BatchMacro)" type="Int32" />
             <Field name="Sum_TeleUpperSuccess" source="Summarize: Sum - TeleUpperSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleLowerSuccess" source="Summarize: Sum - TeleLowerSuccess (BatchMacro) (BatchMacro)" type="Int64" />
             <Field name="Sum_TeleUpperFailures" source="Summarize: Sum - TeleUpperFailures (BatchMacro) (BatchMacro)" type="Int64" />
@@ -9539,7 +9539,7 @@ Query=ShootingZoneByTeam</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_87a66d2ca3e948a88529cac2af5c8739_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_8b6ab626edbc4a49b750d0083b1dd559_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -9622,7 +9622,7 @@ Query=ShootingZoneByTeam</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_b6a5d0568f084ba59cda80a1f21db36e_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_a87aee9a44e4414fbd5dc3cae2550d37_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -9650,7 +9650,7 @@ Query=ShootingZoneByTeam</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_166ef738c49449a496d7578d1a35606a_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_c5e48a2b2f6941798b751176caf910e5_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -9787,7 +9787,7 @@ Query=ShootingZoneByTeam</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_6c5023d3bdc34850ae6cd8292b70aef5_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_322529f216394d62b9bceea6d8d94eb3_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -9944,7 +9944,7 @@ Query=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_ce103ef4a21a484ca5637b05ef450ea9_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_16569026d3bb470c9e192e1a340c9612_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -10039,7 +10039,7 @@ Query=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_482772567dfd42978cb86352c7806a9d_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_a40f25d556674039988c1085db00be09_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -10136,7 +10136,7 @@ Query=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_12472_81940b58047f4caaa848677138dbd48d_\Engine_4776_cb925351bf0c4d92a039557922870075_.yxdb</TempFile>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Engine_9632_41df308409ba41ef8a7a2dabbd2d74ab_\Engine_4776_38ca368b3e6b418eaaa066159a2df0c1_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
